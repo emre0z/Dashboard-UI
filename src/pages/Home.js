@@ -145,7 +145,7 @@ function Home() {
                                                             variant="subtitle2"
                                                             color="text.secondary"
                                                         >
-                                                            URL Adı bulunamadı...
+                                                            URL Adı bulunamadı.
                                                         </Typography>
                                                     )}
                                                     <Button
