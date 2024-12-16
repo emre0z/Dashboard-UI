@@ -31,10 +31,14 @@ const modalStyle = {
     left: '50%',
     transform: 'translate(-50%, -50%)',
     width: 800,
+    maxHeight: '80vh',
     bgcolor: 'background.paper',
     boxShadow: 24,
     p: 4,
     borderRadius: '8px',
+    overflowY: 'auto',
+    overflowX: 'hidden',
+
 };
 
 const ProjectTable = (props) => {
@@ -214,7 +218,17 @@ const ProjectTable = (props) => {
                     <Typography variant="h6" sx={{ marginBottom: 2 }}>
                         {editData ? 'Projeyi Düzenle' : 'Yeni Proje Oluştur'}
                     </Typography>
-                    <List sx={{ py: 0, width: '100%', borderRadius: 2, border: '1px solid', borderColor: 'divider', backgroundColor: 'background.paper', marginBottom: 2 }}>
+                    <List
+                        sx={{
+                            py: 0,
+                            width: '100%',
+                            borderRadius: 2,
+                            border: '1px solid',
+                            borderColor: 'divider',
+                            backgroundColor: 'background.paper',
+                            marginBottom: 2,
+                        }}
+                    >
                         <ListItem>
                             <FormControl fullWidth>
                                 <InputLabel id="main-topic-select-label">Başlık Seçiniz</InputLabel>
@@ -242,27 +256,30 @@ const ProjectTable = (props) => {
                             />
                         </ListItem>
                         <Divider />
-                        <ListItem>
-                            <UrlSection
-                                urlData={urlRows}
-                                setUrlData={setUrlRows}
-                                onDelete={(url) =>
-                                    setDeletedUrls((prev) => [...prev, url])
-                                }
-                            />
-                        </ListItem>
-                        <Divider />
-                        <ListItem>
-                            <InfoSection
-                                infoData={infoRows}
-                                setInfoData={setInfoRows}
-                                onDelete={(info) =>
-                                    setDeletedInfos((prev) => [...prev, info])
-                                }
-                            />
-                        </ListItem>
                     </List>
-                    <Box sx={{ display: 'flex', justifyContent: 'center', gap: 2, marginTop: 3 }}>
+
+                    <Box
+                        sx={{
+                            display: 'flex',
+                            flexDirection: 'column',
+                            alignItems: 'center',
+                            gap: 3,
+                            marginBottom: 3,
+                        }}
+                    >
+                        <UrlSection
+                            urlData={urlRows}
+                            setUrlData={setUrlRows}
+                            onDelete={(url) => setDeletedUrls((prev) => [...prev, url])}
+                        />
+                        <InfoSection
+                            infoData={infoRows}
+                            setInfoData={setInfoRows}
+                            onDelete={(info) => setDeletedInfos((prev) => [...prev, info])}
+                        />
+                    </Box>
+
+                    <Box sx={{ display: 'flex', justifyContent: 'center', gap: 2 }}>
                         <Button
                             variant="contained"
                             color="success"
@@ -276,6 +293,7 @@ const ProjectTable = (props) => {
                     </Box>
                 </Box>
             </Modal>
+
         </>
     );
 };
