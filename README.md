@@ -1,70 +1,83 @@
-# Getting Started with Create React App
+# 🚀 Proje Yönetim Paneli
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Bu proje, React ve Material UI kullanılarak geliştirilmiş bir **Proje Yönetim Paneli** uygulamasıdır. Kullanıcılar, projelere ait **başlık**, **proje adı**, **URL içerikleri** ve **bilgi notlarını (Info)** yönetebilmektedir.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🧩 Kullanılan Teknolojiler
 
-### `npm start`
+- ⚛️ **React JS** – Bileşen tabanlı frontend yapısı
+- 🎨 **Material-UI (MUI)** – Modern ve responsive UI bileşenleri
+- 🗃️ **State Management (useState)** – Yerel veri yönetimi
+- 💡 **Modular Component Design** – Kodun okunabilirliği ve yeniden kullanılabilirliği için bileşen yapısı
+- 📝 **Markdown + GitHub** – Projeyi açık kaynak olarak paylaşma
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🛠️ Proje Özellikleri
 
-### `npm test`
+### ✅ Proje Oluşturma
+- Başlık seçimi (Dropdown)
+- Proje adı girme alanı (TextField)
+- URL ve Info alanlarını tablo halinde oluşturma
+- Oluşturulan projeleri listeleme
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### ✅ Projeler Tablosu
+- Projeleri tablo halinde görüntüleme
+- Her proje için “Düzenle” ve “Sil” işlemleri
+- Modal üzerinden düzenleme
 
-### `npm run build`
+### ✅ Info ve URL Yönetimi
+- Projeye özel bilgi ve bağlantı (info, url) ekleme ve düzenleme
+- Modal içinde yeni info/url ekleme
+- Her bir bilgi için ayrı düzenleme ve silme ikonları
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 📷 Ekran Görüntüleri
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 🏠 Anasayfa
+Ana karşılama ekranı – kullanıcıyı yönlendirici bir yapı
+![Anasayfa](screenshots/anasayfafoto.png)
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 📁 Başlık Yönetimi Sayfası
+Başlıklar arasında CRUD işlemleri gerçekleştirme
+![Başlık Yönetimi](screenshots/baslikyönetimifoto.png)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### 🧱 Proje Yönetimi Paneli
+Proje oluşturma ve listeleme işlemlerinin yapıldığı ana panel
+![Proje Yönetimi](screenshots/projeyonetimifoto.png)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+### ➕ Proje Ekleme Modalı
+Başlık seçme, proje adı yazma, URL ve info ekleme alanlarıyla dinamik form yapısı
+![Proje Ekle Modalı](screenshots/projeduzenlemefoto.png)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### ✏️ Proje Düzenleme – URL ve Info Görünümü
+Var olan projenin içeriğini modal ile düzenleme imkanı
+![Proje Düzenle 1](screenshots/projeduzenlemefoto2.png)
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### 🛠️ Proje Düzenleme Devamı
+URL ve Info düzenleme alanları, silme ve kaydetme seçenekleri
+![Proje Düzenle 2](screenshots/projeduzenlemefoto3.png)
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 🚀 Kurulum Adımları
 
-### Making a Progressive Web App
+Projeyi çalıştırmak için aşağıdaki adımları takip edebilirsin:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```bash
+git clone https://github.com/kullaniciadiniz/proje-yonetim-paneli.git
+cd proje-yonetim-paneli
+npm install
+npm start
